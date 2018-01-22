@@ -1,0 +1,72 @@
+.lovehearts {
+    &_paused .lovehearts {
+        &,
+        &__inner,
+        &__inner:before {
+            animation-play-state: paused;
+        }
+    }
+
+    &_body {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.snowflake {
+    position: absolute;
+    animation: lovehearts_y 10s infinite linear;
+    will-change: transform;
+
+    &__inner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            content: '';
+            background-size: 100% 100%;
+        }
+
+        &_wind {
+            animation: lovehearts_x_8 1s infinite alternate ease-in-out;
+        }
+
+        &_rotation:before {
+            animation: lovehearts_rotation 2s infinite linear;
+        }
+
+        &_rotation_reverse:before {
+            animation: lovehearts_rotation_reverse 2s infinite linear;
+        }
+    }
+}
+
+@keyframes lovehearts_rotation {
+    from {
+       transform: rotate(0deg);
+    }
+
+    to {
+       transform: rotate(360deg);
+    }
+}
+
+@keyframes lovehearts_rotation_reverse {
+    from {
+       transform: rotate(0deg);
+    }
+
+    to {
+       transform: rotate(-360deg);
+    }
+}

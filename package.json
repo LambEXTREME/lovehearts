@@ -1,0 +1,60 @@
+{
+  "name": "magic-lovehearts",
+  "description": "Falling lovehearts",
+  "version": "4.0.0",
+  "author": {
+    "name": "Denis Seleznev",
+    "email": "hcodes@yandex.ru",
+    "url": "https://github.com/LambEXTREME/lovehearts"
+  },
+  "main": "dist/lovehearts.js",
+  "homepage": "https://github.com/LambEXTREME/lovehearts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LambEXTREME/lovehearts.git"
+  },
+  "keywords": [
+    "heart",
+    "lovehearts",
+    "lovehearts",
+    "heart",
+    "valentine",
+    "love",
+    "falling"
+  ],
+  "engines": {
+    "node": ">= 4"
+  },
+  "files": [
+    "dist/lovehearts.js",
+    "dist/lovehearts.min.js",
+    "dist/lovehearts.light.js",
+    "dist/lovehearts.light.min.js"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.0",
+    "babel-helpers": "^6.24.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "del": "^3.0.0",
+    "eslint": "^4.14.0",
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-less": "^3.3.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-rollup": "^2.15.0",
+    "gulp-uglify": "~3.0.0",
+    "rollup-plugin-babel": "^3.0.3"
+  },
+  "scripts": {
+    "test": "eslint .",
+    "build": "gulp",
+    "prepublish": "gulp"
+  }
+}
